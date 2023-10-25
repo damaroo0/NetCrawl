@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добро пожаловать</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'welcome_page.css' %}">
+</head>
+<body>
+    <header>
+        <!-- Здесь можно добавить содержимое для заголовка, если необходимо -->
+    </header>
+    
+    <div class="container">
+        <p class="welcome-phrase">Добро пожаловать в игру!</p>
+
+        <div class="box">
+            <a class="button" href="{% url 'coming_later' %}">Кнопка 1</a>
+            <a class="button" href="{% url 'coming_later' %}">Кнопка 2</a>
+            <a class="button" href="{% url 'coming_later' %}">Кнопка 3</a>
+            <a class="button" href="{% url 'coming_later' %}">Кнопка 4</a>
+        </div>
+
+        <p class="footer-text">Работаем с 2023 года и по сей день</p>
+    </div>
+    
+    <footer>
+        <!-- Здесь можно добавить содержимое для подвала, если необходимо -->
+    </footer>
+</body>
+</html>
