@@ -1,0 +1,106 @@
+/*  */
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    font-family: 'Inter', sans-serif;
+}
+
+/* all page */
+#nav-panel{
+    width: 65%;
+    max-width: 600px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh;
+
+    border-radius: 46px;
+    border: 0.5px dashed #000;
+    background-color: #d9d9d9;
+
+    /* for pseudo elements */
+    position: relative;
+}
+.section{
+    text-align: center;
+    margin: 20px;
+}
+
+/* text styles*/
+.text-block{
+    color: #000;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.welcome-phrase{
+    font-size: 24px;
+}
+.operating-date{
+    font-size: 16px;
+}
+
+/* button group style */
+.button-block{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.button{
+    width: 100%;
+    max-width: 42.5%;
+    padding: 10px;
+    margin-bottom: 5px;
+
+    border-radius: 5px;
+    background: #454545;
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    word-wrap: break-word;
+    text-decoration: none;
+
+    transition: background 0.3s, color 0.3s;
+}
+.button:hover{
+    background: #fff;
+    color: #000;
+}
+
+/* dividers style */
+.section-divider {
+    width: 80%;
+    height: 0px;
+    flex-shrink: 0;
+
+    position: relative;
+
+    stroke-width: 1px;
+    stroke: #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* media callback for little sreens*/
+@media screen and (max-width: 768px){
+    .text-block{
+        font-size: 18px;
+    }
+    .welcome-phraze{
+        font-size: large;
+    }
+    .operating-data{
+        font-size: 14px;
+    }
+    .button{
+        font-size: 10px;
+    }
+}

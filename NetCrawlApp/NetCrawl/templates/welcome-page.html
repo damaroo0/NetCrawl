@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NetCrew</title>
+    <link rel="stylesheet" type="text/css" href="{% static "welcome-page.css" %}">
+</head>
+<body>
+    <header>
+        <!-- "" -->
+    </header>
+
+    <div id="nav-panel">
+        <div class="section">
+            <h3 class="text-block welcome-phrase">Welcome To NetCrawl!</h3>
+            <hr class="section-divider">
+        </div>
+        <div class="button-block">
+            <a class="button" href="{% url 'coming_later' %}">Start New Game</a>
+            <a class="button" href="{% url 'coming_later' %}">Load Your Game</a>
+            <a class="button" href="{% url 'coming_later' %}">Custom Button</a>
+            <a class="button" href="{% url 'coming_later' %}">Empty Button</a>
+        </div>
+        <div class="section">
+            <hr class="section-divider">
+            <h3 class="text-block operating-date">Operating from 2023 to the present day</h3>
+        </div>
+    </div>
+
+    <footer>
+        <!-- "" -->
+    </footer>
+</body>
+</html>

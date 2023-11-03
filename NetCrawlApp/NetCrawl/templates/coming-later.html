@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static "coming-later.css" %}">
+	<title>Comming-Later</title>
+</head>
+<body>
+    <div class="centered-block">
+        <p>Эта страница находится в разработке, пожалуйста, попробуйте позже.</p>
+        <p><a href="{% url 'welcome_page' %}">Вернуться на главную страницу ТУТ</a></p>
+    </div>
+</body>
+</html>
